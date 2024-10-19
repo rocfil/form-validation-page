@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Anaheim&family=Oswald&display=swap");
+/* seletor geral - box-sizing: border-box. No body: cor de fundo roxo escuro, display flex, alinhar itens ao centro, justificar conteúdo ao centro, altura mínima 100vh, sem margem. Definir uma fonte */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(50, 25, 75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Anaheim", sans-serif;
+}
+/* classe container: cor de fundo branca, border-radius 5px, box-shadow: 0 2px 5px rgb(0,0,0,.4), comprimento 400px, comprimento máximo 100% */
+.container {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.4);
+  width: 400px;
+  max-width: 100%;
+}
+/* classe header: cor de fundo a escolher, borda na base 1px solid #f0f0f0, preenchimento 20px 40px. .header h2: sem margem. */
+.header {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 40px;
+}
+
+.header h2 {
+  margin: 0;
+}
+/* form: preencimento 30px 40px; .form-control: margem de baixo 10px, preenchimento de baixo 20px, posição relativa */
+form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+/* .form-control label: display em inline-block, margem de baixo 5px; form-control input:  bordas 2px solid #f0f0f0. border-radius pouco, display block, fonte herdada, tamanho da fonte 14px, preenchimento 10px, comprimento 100%*/
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 3px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control.success input {
+  border-color: rgb(101, 190, 101);
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
+.form-control i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: rgb(101, 190, 101);
+}
+
+.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: red;
+}
+
+/* ------- posicionaod mensagens de erro ------- */
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: red;
+}
+
+/* .form button : background mesma cor que plano de fundo, border 2px solid cor escura, color branco, display block, border curvass 4px,0 preenchimento 10px, width 100%, tamanho da fonte 16px*/
+.form button {
+  background-color: rgb(50, 25, 75);
+  color: #f0f0f0;
+  border: 2px solid black;
+  display: block;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+}

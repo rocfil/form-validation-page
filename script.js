@@ -68,4 +68,3 @@ function isEmail(email) {
     email
   );
 }
-console.log("cadastrar na sua conta da shopee");
